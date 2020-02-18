@@ -45,7 +45,7 @@
   height: 100%;
   display: flex;
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 801px) {
   .navigation-links {
     background-color: red;
     display: none;

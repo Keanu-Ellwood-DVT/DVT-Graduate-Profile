@@ -41,6 +41,7 @@
 
 #profileTitle , #nameTag{
   line-height: 1px;
+  display: inline;
 }
 #profileAdditional a {
   color: black;
@@ -73,7 +74,7 @@
     width: 100%;
     height: auto;
   }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 801px) {
   .education-block {
     line-height: normal;
   }

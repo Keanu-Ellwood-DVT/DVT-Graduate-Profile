@@ -3,14 +3,14 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 2vh;
 }
-main{
+main {
   padding-bottom: 2.5rem;
 }
 .content-container {
   display: grid;
   grid-template-columns: 80%;
   justify-content: center;
-  min-width: 500px;
+  min-width: 360px;
   row-gap: 1%;
 }
 .profile-content-image {
@@ -24,21 +24,23 @@ main{
   width: 100%;
   height: auto;
   border-radius: 50%;
-  
 }
 
 .profile-content-image:hover {
   box-shadow: 10px rgba(0, 0, 0, 0.863);
 }
 
-.experienceCard{
-    margin-bottom: 10px;;
+.experienceCard {
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 801px) {
   body {
     background-color: whitesmoke;
     font-family: "Courier New", Courier, monospace;
-    font-size: 1.5vh;
+    font-size: 2vh;
+  }
+  #profileTitle_job{
+    line-height: normal;
   }
 }
