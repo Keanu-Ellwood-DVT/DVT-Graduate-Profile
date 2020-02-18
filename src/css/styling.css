@@ -1,13 +1,17 @@
 body {
   background-color: whitesmoke;
   font-family: "Courier New", Courier, monospace;
+  font-size: 2vh;
+}
+main{
+  padding-bottom: 2.5rem;
 }
 .content-container {
   display: grid;
   grid-template-columns: 80%;
   justify-content: center;
   min-width: 500px;
-  row-gap: 10px;
+  row-gap: 1%;
 }
 .profile-content-image {
   min-width: 20%;
@@ -24,4 +28,17 @@ body {
 
 .profile-content-image:hover {
   box-shadow: 10px rgba(0, 0, 0, 0.863);
+}
+
+.experienceCard{
+    margin-bottom: 10px;;
+}
+
+
+@media only screen and (max-width: 800px){
+  body {
+    background-color: whitesmoke;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5vh;
+  }
 }
