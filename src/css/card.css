@@ -48,7 +48,15 @@
   align-items: center;
   line-height: 3px;
 }
-
+.education-image {
+    min-width: 16%;
+    max-width: 16%;
+    padding-bottom: 10px;
+  }
+  .education-image img{
+    width: 100%;
+    height: auto;
+  }
 @media only screen and (max-width: 780px) {
   .education-block {
     line-height: normal;
