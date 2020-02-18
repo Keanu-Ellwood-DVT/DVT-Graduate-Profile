@@ -1,0 +1,59 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+  background: white;
+  display: flex;
+  border-radius: 1%;
+  min-width: 80px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #144973;
+}
+
+.content-divider {
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-header {
+  background-color: #144973;
+  min-height: 5px;
+}
+.card-content {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-style: normal;
+}
+.profile-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#profileAdditional a {
+  color: black;
+  text-decoration: none;
+}
+
+#profileAdditional a:hover {
+  color: #144973;
+  text-decoration: underline;
+}
+
+.education-block {
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  height: 100%;
+  align-items: center;
+  line-height: 3px;
+}
+
+@media only screen and (max-width: 780px) {
+  .education-block {
+    line-height: normal;
+  }
+  .profile-card-content {
+    line-height: normal;
+  }
+}
