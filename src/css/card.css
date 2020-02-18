@@ -3,12 +3,12 @@
   transition: 0.1s;
   background: white;
   display: flex;
-  border-radius: 1%;
   min-width: 80px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
-  border-top: 2px solid #144973;
+  border-top: 3px solid #144973;
+  border-radius: 1%;
 }
 
 .content-divider {
@@ -18,8 +18,17 @@
 
 .card-header {
   background-color: #144973;
-  min-height: 5px;
+  min-height: 8px;
+  border-radius: 25%;
 }
+.card:hover  .card-header {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  min-height: 10px;
+}
+
 .card-content {
   margin-left: 3%;
   margin-right: 3%;
