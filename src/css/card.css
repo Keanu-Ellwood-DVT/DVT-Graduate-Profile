@@ -39,6 +39,9 @@
   flex-direction: column;
 }
 
+#profileTitle , #nameTag{
+  line-height: 1px;
+}
 #profileAdditional a {
   color: black;
   text-decoration: none;
