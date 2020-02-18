@@ -1,0 +1,27 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+}
+.content-container {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+  min-width: 500px;
+  row-gap: 10px;
+}
+.profile-content-image {
+  min-width: 20%;
+  max-width: 20%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.profile-content-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 10px rgba(0, 0, 0, 0.863);
+}
+
+.profile-content-image:hover {
+  box-shadow: 10px rgba(0, 0, 0, 0.863);
+}
