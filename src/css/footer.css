@@ -8,3 +8,17 @@
     color: whitesmoke;
     text-align: center;
   }
+
+  .footer a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .footer a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+  }
+
+  .footer a:visited{
+    color: whitesmoke;
+  }
