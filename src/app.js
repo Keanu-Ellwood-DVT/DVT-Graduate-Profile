@@ -1,5 +1,5 @@
-function scrollToElement() {
-  var element = document.getElementById("lol");
+function scrollToElement(elementParam) {
+  var element = document.getElementById(elementParam);
 
   element.scrollIntoView({
     behavior: "smooth",
