@@ -45,10 +45,36 @@
   height: 100%;
   display: flex;
 }
-
 @media only screen and (max-width: 780px) {
   .navigation-links {
     background-color: red;
     display: none;
   }
+  .social-media-links {
+    list-style: none;
+    min-width: 5%;
+    max-width: 5%;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+}
+.social-media {
+  display: flex;
+  margin-top: 10%;
+  float: right;
+  bottom: 0;
+  margin-left: -2%;
+  flex-direction: row;
+  position: fixed;
+}
+.social-media-links {
+  list-style: none;
+  min-width: 3%;
+  max-width: 3%;
+  flex-direction: row;
+  margin-right: 10px;
+}
+.social-media-icon {
+  width: 100%;
+  height: auto;
 }
