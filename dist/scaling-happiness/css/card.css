@@ -1,0 +1,85 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+  background: white;
+  display: flex;
+  min-width: 80px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  border-top: 3px solid #144973;
+  border-radius: 0.5%;
+}
+
+.content-divider {
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-header {
+  background-color: #144973;
+  min-height: 8px;
+  border-radius: 25%;
+}
+.card:hover  .card-header {
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  min-height: 10px;
+}
+
+.card-content {
+  margin-left: 3%;
+  margin-right: 3%;
+  font-style: normal;
+}
+.profile-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#profileTitle , #nameTag{
+  line-height: 1px;
+  display: inline;
+}
+#profileAdditional a {
+  color: black;
+  text-decoration: none;
+}
+
+#profileAdditional a:hover {
+  color: #144973;
+  text-decoration: underline;
+}
+
+#footerBottom{
+  margin-bottom: 3%;
+}
+
+.education-block {
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px;
+  height: 100%;
+  align-items: center;
+  line-height: 3px;
+}
+.education-image {
+    min-width: 16%;
+    max-width: 16%;
+    padding-bottom: 10px;
+    margin-right: 10px;
+  }
+  .education-image img{
+    width: 100%;
+    height: auto;
+  }
+@media only screen and (max-width: 801px) {
+  .education-block {
+    line-height: normal;
+  }
+  .profile-card-content {
+    line-height: normal;
+  }
+}

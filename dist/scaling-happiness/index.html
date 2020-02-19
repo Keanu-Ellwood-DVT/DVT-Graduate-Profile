@@ -1,65 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.8.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.8.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.8.2/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/styling.css" />
+    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/navigation.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <title>DVT Graduate Profile</title>
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="nav-container">
+      <nav class="navigation-bar">
+        <div id="navigationLeft">
+          <a href="#">
+            <img src="images/logo.png" />
+          </a>
+          <h1>
+            Graduate Profile
+          </h1>
+        </div>
+
+        <div class="navigationRight"></div>
+        <ul class="navigation-links">
+          <li>
+            <a href="javascript:;" onclick="scrollToElement('aboutCard')"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" onclick="scrollToElement('experienceCard')"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="javascript:;" onclick="scrollToElement('educationCard')"
+              >Education</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <main class="content-container">
+      <div class="profile-content card">
+        <div class="profile-content-image">
+          <img src="images/profileImage.jpg" />
+        </div>
+        <div class="profile-card-content">
+          <div id="profileTitle">
+            <h2>Keanu Ellwood</h2>
+            <span id="profileTitle_job">Software Engineering Graduate</span>
+          </div>
+          <div id="profileAdditional">
+            <p>
+              Works at
+              <a href="https://www.dvt.co.za/">Dynamic Visual Technologies</a>
+              <br />
+              Johannesburg Area, South Africa
+            </p>
+          </div>
+        </div>
+      </div>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+      <div class="card" id="aboutCard">
+        <div class="content-divider">
+          <div class="card-header"></div>
+          <div class="card-content">
+            <h2>About</h2>
+            <p>
+              2020 DVT Grad <br /><br />
+              I have always loved solving problems in any possible way.
+              Programming allows me to solve these problems in a creative manner
+              while also taking complex tasks and simplifying it, so that it
+              becomes human-friendly and can be utilized in other situations.<br />
+              I am a very positive and dedicated person. I am proactive and
+              always fully commit to every project I am part of to ensure the
+              project succeeds. <br />In my free time I enjoy acquiring new
+              skills and bettering myself, so that I can apply these new skills
+              to my daily life. <br /><br />Proficiency in both Afrikaans and
+              English.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="experienceCard">
+        <div class="content-divider">
+          <div class="card-header"></div>
+          <div class="card-content">
+            <h2>Experience</h2>
+
+            <div class="education-block">
+              <div class="education-image">
+                <img src="images/dvt.png" />
+              </div>
+              <div id="educationContent">
+                <h2 id="nameTag">Dynamic Visual Technologies</h2>
+                <p>Web Graduate / Graduate Software Engineer</p>
+                <br />
+                <p>Feb 2020 - Present</p>
+              </div>
+            </div>
+
+            <div class="education-block">
+              <div class="education-image">
+                <img src="images/watergat.jpg" />
+              </div>
+              <div id="educationContent">
+                <h2 id="nameTag">Die Water Gat Proprietary Limited</h2>
+                <p>Store Assistant</p>
+                <br />
+                <p>2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="educationCard">
+        <div class="content-divider">
+          <div class="card-header"></div>
+          <div class="card-content">
+            <h2>Education</h2>
+
+            <div class="education-block">
+              <div class="education-image">
+                <img src="images/belgium.png" />
+              </div>
+              <div id="educationContent">
+                <h2 id="nameTag">The Belgium Campus ITversity</h2>
+                <p>Bachelor of Computing, Computer Software Engineering</p>
+                <br />
+                <p>2017-2020</p>
+              </div>
+            </div>
+
+            <div class="education-block">
+              <div class="education-image">
+                <img src="images/tuks.png" />
+              </div>
+              <div id="educationContent">
+                <h2 id="nameTag">University of Pretoria</h2>
+                <p>BEng Chemical Engineering</p>
+                <br />
+                <p>2016</p>
+              </div>
+            </div>
+
+            <div class="education-block">
+              <div class="education-image">
+                <img src="images/hs.jpg" />
+              </div>
+              <div id="educationContent">
+                <h2 id="nameTag">Die Hoërskool Wonderboom</h2>
+                <p>
+                  Received National Senior Certificate
+                </p>
+
+                <p>
+                  Qualified for a bachelor's degree.
+                </p>
+                <br />
+                <p>2011-2015</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <ul class="social-media">
+      <li class="social-media-links">
+        <a href="https://www.facebook.com/keanu.ellwood.3">
+          <img src="images/facebook.svg" class="social-media-icon" />
+        </a>
+      </li>
+      <li class="social-media-links">
+        <a href="https://www.linkedin.com/in/keanu-ellwood-b94497158/">
+          <img src="images/linkedin.svg" class="social-media-icon" />
+        </a>
+      </li>
+      <li class="social-media-links">
+        <a href="https://www.instagram.com/keanu.ellwood/">
+          <img src="images/insta.svg" class="social-media-icon" />
+        </a>
+      </li>
+      <li class="social-media-links">
+        <a href="https://github.com/Keanu-Ellwood-DVT">
+          <img src="images/github.png" class="social-media-icon" />
+        </a>
+      </li>
+    </ul>
+    <div id="footerBottom"></div>
+    <div class="footer">
+      Copyright © 2020
+      <a href="https://www.dvt.co.za/">Dynamic Visual Technologies</a> (Pty)
+      Ltd. All rights reserved.
+    </div>
+
+    <script src="app.js"></script>
   </body>
 </html>
+
