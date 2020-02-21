@@ -42,10 +42,18 @@
   flex-direction: column;
 }
 
-#profileTitle,
 #nameTag {
   line-height: 1px;
   display: inline;
+}
+
+#profileName{
+  line-height: normal;
+}
+
+#profileTitle {
+  line-height: 1px;
+  display: inline-flexbox;
 }
 
 #profileAdditional a {
