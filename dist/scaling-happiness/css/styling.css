@@ -1,7 +1,7 @@
 body {
   background-color: whitesmoke;
   font-family: "Courier New", Courier, monospace;
-  font-size: 2vh;
+  font-size: 18px;
 }
 
 main {
@@ -39,13 +39,8 @@ main {
 }
 
 @media only screen and (max-width: 801px) {
-  body {
-    background-color: whitesmoke;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 2vh;
-  }
-
-  #profileTitle_job {
+   #profileTitle_job,
+   #profileTitle {
     line-height: normal;
   }
 }
