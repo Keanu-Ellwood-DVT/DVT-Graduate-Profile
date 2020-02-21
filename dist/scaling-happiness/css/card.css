@@ -5,6 +5,7 @@
   display: flex;
   min-width: 80px;
 }
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
   border-top: 3px solid #144973;
@@ -21,7 +22,8 @@
   min-height: 8px;
   border-radius: 25%;
 }
-.card:hover  .card-header {
+
+.card:hover .card-header {
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   border-bottom-left-radius: 0%;
@@ -34,15 +36,18 @@
   margin-right: 3%;
   font-style: normal;
 }
+
 .profile-card-content {
   display: flex;
   flex-direction: column;
 }
 
-#profileTitle , #nameTag{
+#profileTitle,
+#nameTag {
   line-height: 1px;
   display: inline;
 }
+
 #profileAdditional a {
   color: black;
   text-decoration: none;
@@ -53,7 +58,7 @@
   text-decoration: underline;
 }
 
-#footerBottom{
+#footerBottom {
   margin-bottom: 3%;
 }
 
@@ -65,20 +70,24 @@
   align-items: center;
   line-height: 3px;
 }
+
 .education-image {
-    min-width: 16%;
-    max-width: 16%;
-    padding-bottom: 10px;
-    margin-right: 10px;
-  }
-  .education-image img{
-    width: 100%;
-    height: auto;
-  }
+  min-width: 16%;
+  max-width: 16%;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+.education-image img {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (max-width: 801px) {
   .education-block {
     line-height: normal;
   }
+  
   .profile-card-content {
     line-height: normal;
   }
