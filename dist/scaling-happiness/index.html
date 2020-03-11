@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,12 +7,11 @@
     <link rel="stylesheet" type="text/css" href="css/card.css" />
     <link rel="stylesheet" type="text/css" href="css/navigation.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>DVT Graduate Profile</title>
   </head>
 
   <body>
-
-    <!-- Navigation bar -->
     <div class="nav-container">
       <nav class="navigation-bar">
         <div id="navigationLeft">
@@ -28,19 +26,23 @@
         <div class="navigationRight"></div>
         <ul class="navigation-links">
           <li>
-            <a href="javascript:;" onclick="scrollToElement('aboutCard')">About</a>
+            <a href="javascript:;" onclick="scrollToElement('aboutCard')"
+              >About</a
+            >
           </li>
           <li>
-            <a href="javascript:;" onclick="scrollToElement('experienceCard')">Experience</a>
+            <a href="javascript:;" onclick="scrollToElement('experienceCard')"
+              >Experience</a
+            >
           </li>
           <li>
-            <a href="javascript:;" onclick="scrollToElement('educationCard')">Education</a>
+            <a href="javascript:;" onclick="scrollToElement('educationCard')"
+              >Education</a
+            >
           </li>
         </ul>
       </nav>
     </div>
-
-    <!-- Main Content Area -->
     <main class="content-container">
       <div class="profile-content card">
         <div class="profile-content-image">
@@ -48,9 +50,7 @@
         </div>
         <div class="profile-card-content">
           <div id="profileTitle">
-          <div id="profileName">
-            <h2 >Keanu Ellwood</h2>
-          </div>
+            <h2>Keanu William Ellwood</h2>
             <span id="profileTitle_job">Software Engineering Graduate</span>
           </div>
           <div id="profileAdditional">
@@ -109,7 +109,7 @@
                 <img src="images/watergat.jpg" />
               </div>
               <div id="educationContent">
-                <h2 id="nameTag">Die Water Gat</h2>
+                <h2 id="nameTag">Die Water Gat Proprietary Limited</h2>
                 <p>Store Assistant</p>
                 <br />
                 <p>2018</p>
@@ -131,8 +131,7 @@
               </div>
               <div id="educationContent">
                 <h2 id="nameTag">The Belgium Campus ITversity</h2>
-                <p>Bachelor of Computing</p>
-                <p>Computer Software Engineering</p>
+                <p>Bachelor of Computing, Computer Software Engineering</p>
                 <br />
                 <p>2017-2020</p>
               </div>
@@ -171,8 +170,6 @@
         </div>
       </div>
     </main>
-
-    <!-- Social Media Links -->
     <ul class="social-media">
       <li class="social-media-links">
         <a href="https://www.facebook.com/keanu.ellwood.3">
@@ -195,18 +192,18 @@
         </a>
       </li>
     </ul>
-
-    <!-- Footer -->
     <div id="footerBottom"></div>
-
     <div class="footer">
-      Copyright © 2020
-      <a href="https://www.dvt.co.za/">Dynamic Visual Technologies</a> (Pty)
-      Ltd. All rights reserved.
+      <p>
+        Copyright © 2020
+        <a href="https://www.dvt.co.za/"
+          >Dynamic Visual Technologies</a>
+        (Pty) Ltd. All rights reserved.
+      </p>
+      <button id="addPWA">Install PWA</button>
     </div>
 
-    <!-- Custom JavaScript Links -->
     <script src="app.js"></script>
+    <script src="./index.js"></script>
   </body>
-
 </html>
